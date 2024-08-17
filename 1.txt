@@ -1,0 +1,53 @@
+
+<body>
+<div class="rows">
+<div class="columns" style="background-color: #111"></div>
+</div>
+
+
+.column{
+float:left;
+padding: 12px;
+min-height: 350px;
+
+}
+
+
+.left-side{
+	width: 35%;
+}
+
+.right-side{
+	width: 60%;
+}
+
+
+.both-rows:after{
+	content:"";
+	display:both;
+	clear: both;
+}
+
+
+@media screen and (max-width: 800px){
+.column {
+	width: 100%;
+}
+}
+
+<meta http-equiv-"X-UA-Compatible" content="IE=edge">
+
+
+<div class="both-rows">
+<div class="column left-side" style="background-color: lightskyblue">
+
+<p>Hi @TomSawyer, this will work on any browser that supports media queries. The example media query above will be triggered when the viewport width is 480px or less. The test you tried, was the viewport width less than 481px? Does that version of IE support media queries? From a quick search I found</p>
+</div>
+</div>
+
+<div class="both-rows">
+<div class="column right-side" style="background-color: lightcoral">
+
+<p>Hi @TomSawyer, this will work on any browser that supports media queries. The example media query above will be triggered when the viewport width is 480px or less. The test you tried, was the viewport width less than 481px? Does that version of IE support media queries? From a quick search I found</p>
+</div>
+</div>
